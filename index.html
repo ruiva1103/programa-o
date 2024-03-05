@@ -2,7 +2,7 @@
 <head>
 <style>
 .myDiv {
-  border: 5px outset red;
+  border: 5px outset blue;
   background-color: lightblue;
   text-align: center;
   margin-bottom: 10px;
@@ -21,23 +21,50 @@
     background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo para melhorar a legibilidade */
     padding: 10px; /* Espaçamento interno do texto */
 }
+.produtos{
+  border: 5px outset blue;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  width: auto;
+  height: auto;
+}
+.produto{
+  margin-bottom: 5px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  text-align: center;
+  display:inline-block;
+}
 </style>
 </head>
 <body>
-<div class="container">
-  <img src="./img/foto.jpg" alt="Logo da mercearia">
-  <div class="texo">
-    <a href="./mercearia.html">Texto sobre a imagem</a>
+  <center>
+    <div class="container">
+      <img src="./foto.jpg" alt="Logo da mercearia">
+      <div class="texto">
+        <a href="./mercearia.html">Texto sobre a imagem</a>
+      </div>
+    </div>
+  </center>
+  <div class="myDiv">
+    <h2>historia da mercearia</h2>
+    <p>texto com a historia da mercearia.</p>
   </div>
-</div>
-<div class="myDiv">
-  <h2>This is a heading in a div element</h2>
-  <h3>Historia da mercearia</h3>
-  <p>This is some text in a div element.</p>
-</div>
-<div class="myDiv">
-    <h2>This is a heading in a div element</h2>
-    <p>This is some text in a div element.</p>
+  <div class="produtos">
+  <div class="produto">
+    <div class="imgProduto">
+      <img src="" alt="imagem do produto">
+    </div>
+    <div class="descricaoPrecoProduto">
+      <h4></h4>
+    </div>
+    texto qualquer
+  </div>
+  <div class="produto">
+    texto qualquer
+  </div>
 </div>
 </body>
 </html>
