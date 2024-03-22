@@ -1,74 +1,242 @@
 <html>
 <head>
-<style>
-.myDiv {
-  border: 5px outset blue;
-  background-color: lightblue;
-  text-align: center;
-  margin-bottom: 10px;
+  <meta charset="UTF-8">
+  <style>
+    .myDiv {
+      border: 5px outset rgb(36, 138, 99);
+      background-color: rgb(182, 240, 204);
+      text-align: center;
+      margin-bottom: 10px;
 
-}
-.container {
-    position: relative;
-    display: inline-block; /* Garante que o contêiner se ajuste ao tamanho da imagem */
-}
+    }
+    .container {
+        text-align: center;
+        position: relative;
+        display: inline-block; /* Garante que o contêiner se ajuste ao tamanho da imagem */
+    }
 
-.texto {
-    position: absolute;
-    top: 50%; /* Coloca o texto no meio verticalmente */
-    left: 50%; /* Coloca o texto no meio horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
-    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo para melhorar a legibilidade */
-    padding: 10px; /* Espaçamento interno do texto */
-}
-.produtos{
-  border: 5px outset blue;
-  background-color: lightblue;
-  margin-bottom: 10px;
-  width: auto;
-  height: auto;
-}
-.produto{
-  margin-bottom: 5px;
-  margin: 10px;
-  width: 200px;
-  height: 300px;
-  background-color: blue;
-  text-align: center;
-  display:inline-block;
-}
-.imgStyleProduto{
-  width: 100px;
-  height: 100px;
-}
-</style>
+    .texto {
+        position: absolute;
+        top: 50%; /* Coloca o texto no meio verticalmente */
+        left: 50%; /* Coloca o texto no meio horizontalmente */
+        transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
+        background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo para melhorar a legibilidade */
+        padding: 10px; /* Espaçamento interno do texto */
+    }
+    .produtos{
+      border: 5px outset  rgb(36, 138, 99);
+      background-color: rgb(182, 240, 204);
+      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+    }
+    .produto{
+      margin-bottom: 10px; /* Distancia da borda */
+      margin: 100px; /* tamanho da margem */
+      width: 150px; /*Tamanho da largura da div*/
+      height: 200;/*MOSTRAR ERRO E TROCAR POR 'auto'  tamanho da altura da div*/
+      background-color:  rgb(36, 138, 99);
+      text-align: center;
+      display: inline-block;
+    }
+    .imagemProduto{
+      margin-top: 5px;
+      width: 80px;
+      height: 80px;
+    }
+  </style>
 </head>
 <body>
   <center>
     <div class="container">
-      <img src="./foto.jpg" alt="Logo da mercearia">
-      <div class="texto">
-        <a href="./mercearia.html">Texto sobre a imagem</a>
-      </div>
+      <img src="./img/foto.jpg" alt="Imagem">
+      <div class="texto">Texto sobre a imagem</div>
     </div>
   </center>
   <div class="myDiv">
-    <h2>historia da mercearia</h2>
-    <p>texto com a historia da mercearia.</p>
+    <h2>História da mercearia</h2>
+    <p>Texto com a história da mercearia.</p>
   </div>
   <div class="produtos">
-  <div class="produto">
-    <div class="imgProduto">
-      <img class="imgStyleProduto" src="./img/produtos/garrafa_agua.webp" alt="imagem do produto">
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/racao1.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Ração Special Dog Carne Cães Adultos - 15 Kg</h3>
+        <h4>99,99</h4>
+      </div>
     </div>
-    <div class="descricaoPrecoProduto">
-      <h4></h4>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
     </div>
-    texto qualquer
-  </div>
-  <div class="produto">
-    texto qualquer
-  </div>
-</div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
+    <div class="produto">
+      <div class="imgProduto">
+        <img class="imagemProduto" src="./img/produtos/garra_agua.webp" alt="imagem do produto">
+      </div>
+      <div class="descricaoPrecoProduto">
+        <h3>Garra de água</h3>
+        <h4>preco</h4>
+      </div>
+    </div>
 </body>
 </html>
