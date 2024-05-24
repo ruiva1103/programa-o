@@ -1,38 +1,47 @@
-<html>
-    <head>
-        <title>tebelas no html</title>
-    </head>
-    <body>
-            <table style="border: 2px solid black;">
-            <tr> <!-- <tr> cria uma linha na <tabela-->
-                <td style="border: 2px solid black;">ID</td> <!--<td> Cria uma coluna ma tabela-->
-                <td style="border: 2px solid black;">1</td>
-                <td style="border: 2px solid black;">2</td>
-                <td style="border: 2px solid black;">3</td>    
-                </tr>
-                <tr>
-                    <td style="border: 2px solid black;">Nome</td>
-                    <td style="border: 2px solid black;">Vitoria</td>
-                    <td style="border: 2px solid black;">Izadora</td>
-                    <td style="border: 2px solid black;">Vitor</td>
-                  
-                </tr>
-                <tr>
-                    <td style="border: 2px solid black;">E-mail</td>
-                    <td style="border: 2px solid black;">Vitoria@gmail.com</td>
-                    <td style="border: 2px solid black;">Izadora@gmail.com</td>
-                    <td style="border: 2px solid black;">Vitor@gmail.com</td>
-                </tr>
-                <tr>
-                    <td style="border: 2px solid black;">data de nascimento</td>
-                    <td style="border: 2px solid black;">11/03/2005</td>
-                    <td style="border: 2px solid black;">27/02/2007</td>
-                    <td style="border: 2px solid black;">05/12/2005</td>
-                </tr>
-                <tr>
-                    <td>Total de usuários</td>
-                    <td colspan="3" style="border: 2px solid black;">3</td>
-                </tr>
-            </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de campos</title>
+    <script>
+      function cadastrarUsuario(){
+         usuario = new Object();
+         nome = document.getElementById("nomeUsuario").value;
+         idade = document.getElementById("idadeUsuario").value;
+         genero = document.getElementById("generoUsuario").value;
+
+         usuario.nome = nome;
+         usuario.idade = idade;
+         usuario.genero = genero;
+
+         console.log("Nome do usuário: "+usuario.nome);
+         console.log("Idade do usuário: "+usuario.idade);
+         console.log("Genero do usuário: "+usuario.genero);
+      }
+     
+    </script>
+</head>
+<body>
+   <input type="text" placeholder="Digite seu nome..." name="nomeUsuario" id="nomeUsuario"> 
+   <br>
+   <input type="number" placeholder="Digite sua idade..." min="0" max="100" name="idadeUsuairo" id="idadeUsuario">
+   <br>
+   <select name="generoUsuario" id="generoUsuario">
+     <option>Selecione uma opção</option>
+     <option>Masculino</option>
+     <option>Femenino</option>
+   </select>
+   <br>
+   <div>
+    <label>Você tem um pet?</label>
+    <br>
+     <input type="radio" name="opcao"><label>Sim</label>
+     <br>
+     <input type="radio" name="opcao"><label>Não</label>
+     <br>
+   </div>
+   <br>
+   <button onclick="cadastrarUsuario()">Salvar</button>
+</body>
 </html>
