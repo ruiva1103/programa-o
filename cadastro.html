@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cadastroUsuario(){
+            usuario = new Object();
+            console.log("A função cadastroUsuario está sendo executado...");
+            console.log("");
+            inputNomeUsuario = document.getElementById("usuarioNome");
+            inputCpfUsuario = document.getElementById("usuarioCpf");
+            inputSexoUsuario = document.getElementById("usuarioSexo");
+            /*
+            console.log(usuarioNome.value);
+            console.log(usuarioCpf.value);
+            console.log(usuarioSexo.value);
+            */
+           usuario.nome = inputNomeUsuario.value;
+           usuario.cpf = inputCpfUsuario.value;
+           usuario.sexo = inputSexoUsuario.value;
+           console.log(usuario.nome);
+           console.log(usuario.cpf);
+           console.log(usuario.sexo);
+        }
+    </script>
+</head>
+<body>
+    <div class="cadastro">
+        <label><b>Digite seu nome</b></label>
+        <br>
+        <input type="text" placeholder="Digite o seu nome..." id="usuarioNome">
+        <br>
+        <label><b>Digite o seu CPF</b></label>
+        <br>
+        <input type="number" placeholder="Digite o seu CPF..." id="usuarioCpf">
+        <br>
+        <select id="usuarioSexo">
+            <option>Masculino</option>
+            <option>Femenino</option>
+        </select>
+        <br>
+        <button onclick="cadastroUsuario()">Salvar</button>
+    </div>
+</body>
+</html>
