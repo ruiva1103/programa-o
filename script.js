@@ -6,38 +6,38 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-   enunciado: "Você é gay?",
+   enunciado: "Pergunta 1",
    alternativas: [
-    "sim",
-    "não"
+    "Alternativa 1",
+    "Alternativa 2"
    ]
 }, 
 {
-    enunciado: "Você gosta de gatos?",
+    enunciado: "Pergunta 1",
     alternativas: [
-     "sim",
-     "não"
+     "Alternativa 1",
+     "Alternativa 2"
     ]
  },
  {
-    enunciado: "qual estação você prefere, inverno ou verão?",
+    enunciado: "Pergunta 1",
     alternativas: [
-      "Inverno",
-      "Verão"
+     "Alternativa 1",
+     "Alternativa 2"
     ]
  },
  {
-    enunciado: "Você é introvertido ou extrovertido?",
+    enunciado: "Pergunta 1",
     alternativas: [
-      "introvertido",
-      "extrovertido"
+     "Alternativa 1",
+     "Alternativa 2"
     ]
  },
  {
-    enunciado: "Taylor Swift ou Kanye West?",
+    enunciado: "Pergunta 1",
     alternativas: [
-      "Taylor Swift",
-      "Kanye West"
+     "Alternativa 1",
+     "Alternativa 2"
     ]
  },
 ];
@@ -50,11 +50,4 @@ function mostraPergunta() {
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
 
-mostraPergunta();{
-   for(const alternativa of perguntaAtual.alternativas){
-       const botaoAlternativas = document.createElement("button");
-       botaoAlternativa.textContent = alternativa;
-       caixaAlternativas.appendChild(botaoAlternativas);
-   }
-}
 mostraPergunta();
